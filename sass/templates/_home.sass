@@ -1,0 +1,276 @@
+header  
+    background: $azul
+    position: relative
+    min-height: 70px
+    text-align: center
+    
+    &:after
+        content: ""
+        display: block
+        position: relative
+        bottom: 0
+        width: 100%
+        height: 15px
+    
+        +gradient(90deg, $verde, $branco)
+
+    ul
+        li.logo
+            width: 65px
+            height: 65px
+            //margin-right: 50px
+            +breakpoint($celular)
+                margin: 10px auto
+        li
+            margin: 5px 0
+            display: inline-block
+            vertical-align: middle
+            margin-left: 28px
+            
+            &:nth-last-child(2)
+                
+            
+            +breakpoint($celular)
+                display: block
+                margin: 20px 0px
+            a
+                text-decoration: none
+                color: $cinza
+                
+main
+    text-align: center
+    
+    .container
+        width: 60%
+        
+    .container-fluid
+        padding: 0
+    
+    .container, .container-fluid
+        padding-top: 55px
+    h1
+        margin-bottom: 60px
+    
+    #about
+        .photo-tag-about
+            float: left
+            +breakpoint($celular)
+                float: none
+        
+        .text-about, .c-s-r
+            color: $preto
+            font:
+                family: 'Roboto'
+                weight: $thin
+            
+        .text-about
+            font-size: 15px
+            padding: 10px 20px
+            width: 350px
+            text-align: left
+            float: left
+            +breakpoint($celular)
+                padding: 0
+                width: auto
+                float: none
+                text-align: center
+        .c-s-r
+            font-size: 12px
+            .item
+                margin-top: 3px
+                
+            text-align: right
+            float: right
+            +breakpoint($celular)
+                padding-top: 25px
+                text-align: center
+                float: none
+            
+        span
+            color: $cinza
+            border: 1px solid $cinza
+            padding: 5px
+            width: 28px
+            height: 28px
+            line-height: 12px
+            text-align: center
+            +border-radius(120px)
+            
+    #skills
+        color: $roxo
+        font-weight: bold
+        background: $verde
+        padding-bottom: 55px
+        
+        h1
+            color: $branco
+            
+        p
+            text-align: right
+            
+        .first, .second
+            width: 40%
+            +breakpoint($celular)
+                width: 100%
+            
+        .first
+            float: left
+        
+        .second
+            float: right
+            
+        .category
+            margin-bottom: 20px
+        
+        #bag
+            +make-row
+            
+        
+        span.fa
+            font-size: 20px
+            border: 1px solid $branco
+            padding: 10px
+            width: 40px
+            height: 40px
+            text-align: center
+            +border-radius(120px)
+            +breakpoint($celular)
+                display: none
+            +breakpoint($tablet)
+                display: none
+            
+        .bar
+            margin-top: 13px
+            float: right
+            border: 1px solid $branco
+            background: $branco
+            width: 80%
+            +border-radius(120px)
+            +breakpoint($celular)
+                width: 100%
+            
+            #bar-html,#bar-css,#bar-js,#bar-responsive,#bar-version-control,#bar-performance
+                float: left
+                padding: 3px
+                border: 1px solid $roxo
+                background: $roxo
+                +border-radius(120px)
+                
+            #bar-html
+                width: 85%
+                
+            #bar-css
+                width: 80%
+                
+            #bar-js
+                width: 78%
+                
+            #bar-responsive
+                width: 80%
+                
+            #bar-version-control
+                width: 85%
+                
+            #bar-performance
+                width: 78%
+                
+    #gallery
+        padding-bottom: 45px
+        
+        .proj-group
+            +clearfix
+            +flexbox
+            align-items: center
+            justify-content: space-around
+            margin-bottom: 50px
+            +breakpoint($celular)
+                display: block
+        
+        .projects
+            background: $preto
+            width: 22%
+            min-height: 30vh
+            float: left
+            -webkit-box-shadow: 9px 17px 94px -17px rgba(0,0,0,0.75)
+            -moz-box-shadow: 9px 17px 94px -17px rgba(0,0,0,0.75)
+            box-shadow: 9px 17px 94px -17px rgba(0,0,0,0.75)
+            +breakpoint($celular)
+                width: 100%
+                margin-top: 10px
+                &:nth-last-child(1),&:nth-last-child(2)
+                    display: none
+            
+        #g1
+            background: url('../images/g1.png')
+            background-size: 100% 100%
+        
+        #g3
+            background: url('../images/g3.jpg')
+            background-size: 100% 100%
+                
+                
+        #see-more
+            display: table
+            margin: 0 auto
+            font-size: 18px
+            width: 140px
+            height: 40px
+            padding: 10px 20px
+            border: 1px solid $preto
+            background: none
+            +transition(.5s)
+            &:hover
+                border-color: $cinza
+            a:hover
+                color: $preto
+
+footer
+    text-align: center
+    background: $azul
+    padding-top: 55px
+    
+    .icons-footer
+        +clearfix
+        +flexbox
+        align-items: center
+        justify-content: center
+        margin-top: 20px
+        a
+            margin-left: 15px
+            color: $azul
+            background: $branco
+            border: 1px solid $branco
+            padding: 5px 5px
+            width: 30px
+            height: 30px
+            text-align: center
+            +border-radius(120px)
+            &:hover
+                color: $branco
+                background-color: transparent
+            
+    
+    h2
+        padding-top: 75px
+        
+        font: 
+            family: 'Roboto'
+            size: 24px
+            weight: $thin
+        color: $branco
+        
+        +breakpoint($celular)
+                font-size: 16px
+    p
+        padding: 90px 0 10px 0
+        
+        font: 
+            family: 'Roboto'
+            size: 12px
+            weight: $thin
+        color: $cinza
+        +breakpoint($celular)
+                font-size: 12px
+                
+                
+            

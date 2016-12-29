@@ -7,6 +7,7 @@ $azul: #1B3141
 $roxo: #22008C
 
 /* ======== Font */
+$thin: 100
 $regular: 400
 
 
@@ -24,11 +25,11 @@ $tablet: max-width 991px
 =gradient($angle,$gradient1, $gradient2)
   background-color: $gradient2 
   background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
-  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
-  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
-  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
-  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
-  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2, $gradient1)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2, $gradient1)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2, $gradient1)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2, $gradient1)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2, $gradient1)
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
 
 /* ======== Outros */
